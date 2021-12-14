@@ -1,6 +1,6 @@
 .App {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,24 +12,52 @@
   width: 316px;
   background-color: #1A1B21;
   border-radius: 10px;
+  margin: 1rem 0;
+}
+
+.card-body {
+  padding: 1rem 2.5rem 2.5rem 2.5rem;
 }
 
 .profileInfo {
   text-align: center;
 }
 
+.link {
+  margin: 0.5rem 0;
+}
+
 .buttons {
+  display: flex;
   text-align: center;
   margin: 1rem 0;
 }
 
-.card-body {
-  padding: 2.5rem;
+.email {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
 }
 
-.App-logo {
-  height: 40px;
-  pointer-events: none;
+.email img, .linkedin img {
+  margin-right: 0.25rem;
+}
+
+.email p , .linkedin p {
+ font-size: 14px;
+}
+
+.linkedin {
+  background-color: #5093E2;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
 }
 
 .rrss {
@@ -39,33 +67,4 @@
 
 .rrss img {
   margin: 0 .5rem;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

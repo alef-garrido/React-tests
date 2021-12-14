@@ -1,13 +1,16 @@
+import mail from '../Mail.png'
+import linkedin from '..//linkedin.png'
+
 export default function Buttons() {
   return (
     <div className="buttons">
       <button className="email">
-        <span></span>
-        Email
+        <img src={mail} alt="" />
+        <p>Email</p>
       </button>
       <button className="linkedin">
-        <span></span>
-        Linkedin
+        <img src={linkedin} alt="" />
+        <p>Linkedin</p>
       </button>
     </div>
   )
